@@ -6,12 +6,9 @@ const Bitcoin = require("bitcoincashjs-lib")
  */
 class Crypto {
   /**
-   * @api Crypto.sha256() sha256() - Utility for creating sha256 hash.
-   * @apiName sha256
-   * @apiGroup Crypto
-   * @apiDescription Utility for creating sha256 hash digests of data
+   * Utility for creating sha256 hash digests of data
    *
-   * @apiExample Example usage:
+   * @example
    *   // buffer from hex
    *  let buffer = Buffer.from('0101010101010101', 'hex')
    *  bchjs.Crypto.sha256(buffer)
@@ -27,18 +24,15 @@ class Crypto {
    *  bchjs.Crypto.sha256(buffer)
    *  // <Buffer 26 b0 78 0a 68 3a 1e 09 8e 9c b8 cf a1 b0 92 42 28 25 00 97>
    *
-   * */
-  // Translate address from any address format into a specific format.
+   **/
   static sha256(buffer) {
     return Bitcoin.crypto.sha256(buffer)
   }
+  
   /**
-   * @api Crypto.ripemd160() ripemd160()-Utility for creating ripemd160 hash.
-   * @apiName ripemd160
-   * @apiGroup Crypto
-   * @apiDescription Utility for creating ripemd160 hash digests of data
+   * Utility for creating ripemd160 hash digests of data
    *
-   * @apiExample Example usage:
+   * @example
    *   // buffer from hex
    * let buffer = Buffer.from('0101010101010101', 'hex')
    * bchjs.Crypto.ripemd160(buffer)
@@ -53,17 +47,15 @@ class Crypto {
    * let buffer = Buffer.from('978c09dd46091d1922fa01e9f4a975b91a371f26ba8399de27d53801152121de', 'hex')
    * bchjs.Crypto.ripemd160(buffer)
    * // <Buffer 5f 95 6a 88 86 30 51 ea 52 15 d8 97 0c ed 8e 21 8e b6 15 cf>
-   * */
+   **/
   static ripemd160(buffer) {
     return Bitcoin.crypto.ripemd160(buffer)
   }
+  
   /**
-   * @api Crypto.hash256() hash256() - Utility for creating double sha256 hash.
-   * @apiName hash256
-   * @apiGroup Crypto
-   * @apiDescription Utility for creating double sha256 hash digests of data.
+   * Utility for creating double sha256 hash digests of data.
    *
-   * @apiExample Example usage:
+   * @example
    *   // buffer from hex
    *  let buffer = Buffer.from('0101010101010101', 'hex')
    *  bchjs.Crypto.hash256(buffer)
@@ -78,17 +70,15 @@ class Crypto {
    *  let buffer = Buffer.from('03123464075c7a5fa6b8680afa2c962a02e7bf071c6b2395b0ac711d462cac9354', 'hex')
    *  bchjs.Crypto.hash256(buffer)
    *  // <Buffer 68 8f 1d 02 9e d5 4c 34 d0 32 0b 83 8b f6 fc 64 f6 2f 38 a6 e9 30 a0 af 5b db 4e 27 d1 a6 84 cd>
-   * */
+   **/
   static hash256(buffer) {
     return Bitcoin.crypto.hash256(buffer)
   }
+  
   /**
-   * @api Crypto.hash160() hash160() - Utility for creating ripemd160(sha256()) hash.
-   * @apiName hash160
-   * @apiGroup Crypto
-   * @apiDescription Utility for creating ripemd160(sha256()) hash digests of data.
+   * Utility for creating ripemd160(sha256()) hash digests of data.
    *
-   * @apiExample Example usage:
+   * @example
    *  // buffer from hex
    *  let buffer = Buffer.from('0101010101010101', 'hex')
    *  bchjs.Crypto.hash160(buffer)
@@ -103,17 +93,15 @@ class Crypto {
    *  let buffer = Buffer.from('03123464075c7a5fa6b8680afa2c962a02e7bf071c6b2395b0ac711d462cac9354', 'hex')
    *  bchjs.Crypto.hash160(buffer)
    *
-   * */
+   */
   static hash160(buffer) {
     return Bitcoin.crypto.hash160(buffer)
   }
+  
   /**
-   * @api Crypto.randomBytes() randomBytes() - Generates cryptographically strong pseudo-random data.
-   * @apiName randomBytes
-   * @apiGroup Crypto
-   * @apiDescription Generates cryptographically strong pseudo-random data. The size argument is a number indicating the number of bytes to generate.
+   * Generates cryptographically strong pseudo-random data. The size argument is a number indicating the number of bytes to generate.
    *
-   * @apiExample Example usage:
+   * @example
    * bchjs.Crypto.randomBytes(16)
    * // <Buffer 0e 87 d2 7b c4 c3 d0 06 ef bb f3 a4 e5 ea 87 02>
    *
@@ -128,7 +116,7 @@ class Crypto {
    *
    * bchjs.Crypto.randomBytes(32)
    * // <Buffer ec 44 73 72 ea 48 3e 08 a5 0a 62 b8 40 0f 69 64 a7 75 35 af 20 3d e1 6d ce 3b f9 37 11 19 2b c6>
-   * */
+   */
   static randomBytes(size = 16) {
     return randomBytes(size)
   }

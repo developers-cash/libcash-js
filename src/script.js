@@ -38,13 +38,9 @@ class Script {
   }
 
   /**
-   * @api Script.classifyInput() classifyInput() - Classify transaction input.
-   * @apiName classifyInput
-   * @apiGroup Script
-   * @apiDescription
    * Classify transaction input.
    *
-   * @apiExample Example usage:
+   * @example
    * let pubkeyInput = "3045022100ba2c3b717e023966cb16df65ca83f77029e2a5b80c47c47b6956474ac9ff281302201d48ee3292439e284a6654a0e79ac2b8f7fff5c6b0d715260aa296501a239c6441";
    * bchjs.Script.classifyInput(bchjs.Script.fromASM(pubkeyInput));
    * // pubkey
@@ -66,13 +62,9 @@ class Script {
   }
 
   /**
-   * @api Script.classifyOutput() classifyOutput() - Classify transaction output.
-   * @apiName classifyOutput
-   * @apiGroup Script
-   * @apiDescription
    * Classify transaction output.
    *
-   * @apiExample Example usage:
+   * @example
    * let nullDataOutput = "OP_RETURN 424348466f7245766572796f6e65";
    * bchjs.Script.classifyOutput(bchjs.Script.fromASM(nullDataOutput));
    * // nulldata
@@ -98,13 +90,9 @@ class Script {
   }
 
   /**
-   * @api Script.decode() decode() - Decode a Script buffer.
-   * @apiName decode
-   * @apiGroup Script
-   * @apiDescription
    * Decode a Script buffer.
    *
-   * @apiExample Example usage:
+   * @example
    * // decode P2PKH scriptSig buffer
    * let scriptSigBuffer = Buffer.from("483045022100877e2f9c28421f0a850cc8ff66ba1d0f6c8dbe9e63e199c2c2600c9c15bf9d4402204d35b13d3cc202aa25722b2b1791442ebc5c39d898b609515260ad08f0e766a6012102fb721b92025e775b1b84774e65d568d24645cb633275f5c26f5c3101b214a8fb", 'hex');
    * bchjs.Script.decode(scriptSigBuffer);
@@ -124,13 +112,9 @@ class Script {
   }
 
   /**
-   * @api Script.encode() encode() - Encode a Script buffer.
-   * @apiName encode
-   * @apiGroup Script
-   * @apiDescription
    * Encode a Script buffer.
    *
-   * @apiExample Example usage:
+   * @example
    * // encode P2PKH scriptSig to buffer
    * let scriptSig = [
    * Buffer.from('3045022100877e2f9c28421f0a850cc8ff66ba1d0f6c8dbe9e63e199c2c2600c9c15bf9d4402204d35b13d3cc202aa25722b2b1791442ebc5c39d898b609515260ad08f0e766a601', 'hex'),
@@ -159,13 +143,9 @@ class Script {
   }
 
   /**
-   * @api Script.toASM() toASM() - Script buffer to ASM.
-   * @apiName toASM
-   * @apiGroup Script
-   * @apiDescription
    * Script buffer to ASM.
    *
-   * @apiExample Example usage:
+   * @example
    * // P2PKH scriptSig
    * let scriptSigBuffer = Buffer.from('483045022100877e2f9c28421f0a850cc8ff66ba1d0f6c8dbe9e63e199c2c2600c9c15bf9d4402204d35b13d3cc202aa25722b2b1791442ebc5c39d898b609515260ad08f0e766a6012102fb721b92025e775b1b84774e65d568d24645cb633275f5c26f5c3101b214a8fb', 'hex');
    * bchjs.Script.toASM(scriptSigBuffer);
@@ -181,13 +161,9 @@ class Script {
   }
 
   /**
-   * @api Script.fromASM() fromASM() - Script ASM to buffer.
-   * @apiName fromASM
-   * @apiGroup Script
-   * @apiDescription
    * Script ASM to buffer.
    *
-   * @apiExample Example usage:
+   * @example
    * // P2PKH scriptSig
    * let scriptSigASM = "3045022100877e2f9c28421f0a850cc8ff66ba1d0f6c8dbe9e63e199c2c2600c9c15bf9d4402204d35b13d3cc202aa25722b2b1791442ebc5c39d898b609515260ad08f0e766a601 02fb721b92025e775b1b84774e65d568d24645cb633275f5c26f5c3101b214a8fb";
    * bchjs.Script.fromASM(scriptSigASM);

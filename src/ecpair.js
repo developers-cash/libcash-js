@@ -8,13 +8,11 @@ class ECPair {
   static setAddress(address) {
     ECPair._address = address
   }
+  
   /**
-   * @api Ecpair.fromWIF() fromWIF() - Generates an ECPair from a private key in wallet import format (WIF).
-   * @apiName fromWIF
-   * @apiGroup ECPair
-   * @apiDescription Generates an ECPair from a private key in wallet import format (WIF). Follow these steps to go from a private key to a WIF. This method only works with a compressed private key.
+   * Generates an ECPair from a private key in wallet import format (WIF). Follow these steps to go from a private key to a WIF. This method only works with a compressed private key.
    *
-   * @apiExample Example usage:
+   * @example
    *  // mainnet WIF
    *  let wif = 'L4vmKsStbQaCvaKPnCzdRArZgdAxTqVx8vjMGLW5nHtWdRguiRi1';
    *  bchjs.ECPair.fromWIF(wif);
@@ -37,13 +35,11 @@ class ECPair {
 
     return Bitcoin.ECPair.fromWIF(privateKeyWIF, bitcoincashBitcoinJSLib)
   }
+  
   /**
-   * @api Ecpair.toWIF() toWIF() - Gets a private key in wallet import format from an ECPair.
-   * @apiName toWIF
-   * @apiGroup ECPair
-   * @apiDescription Gets a private key in wallet import format from an ECPair.
+   * Gets a private key in wallet import format from an ECPair.
    *
-   * @apiExample Example usage:
+   * @example
    *  // mainnet wif
    *  let wif = 'L4vmKsStbQaCvaKPnCzdRArZgdAxTqVx8vjMGLW5nHtWdRguiRi1';
    *  // ecpair from wif
@@ -71,13 +67,11 @@ class ECPair {
   static verify(ecpair, buffer, signature) {
     return ecpair.verify(buffer, signature)
   }
+  
   /**
-   * @api Ecpair.fromPublicKey() fromPublicKey() - Generates an ECPair from a public key buffer.
-   * @apiName fromPublicKey
-   * @apiGroup ECPair
-   * @apiDescription Generates an ECPair from a public key buffer.
+   * Generates an ECPair from a public key buffer.
    *
-   * @apiExample Example usage:
+   * @example
    *  // create ECPair from mainnet pubkeyBuffer
    *  let pubkeyBuffer = Buffer.from("02fb721b92025e775b1b84774e65d568d24645cb633275f5c26f5c3101b214a8fb", 'hex');
    *  bchjs.ECPair.fromPublicKey(pubkeyBuffer);
@@ -89,13 +83,11 @@ class ECPair {
   static fromPublicKey(pubkeyBuffer) {
     return Bitcoin.ECPair.fromPublicKeyBuffer(pubkeyBuffer)
   }
+  
   /**
-   * @api Ecpair.toPublicKey() toPublicKey() - Get the public key of an ECPair as a buffer.
-   * @apiName toPublicKey
-   * @apiGroup ECPair
-   * @apiDescription Get the public key of an ECPair as a buffer.
+   * Get the public key of an ECPair as a buffer.
    *
-   * @apiExample Example usage:
+   * @example
    *  // create ecpair from mainnet public key buffer
    *  let ecpair = bchjs.ECPair.fromPublicKey(Buffer.from('02d305772e0873fba6c1c7ff353ce374233316eb5820acd7ff3d7d9b82d514126b', 'hex'));
    *  // create public key buffer
@@ -111,13 +103,11 @@ class ECPair {
   static toPublicKey(ecpair) {
     return ecpair.getPublicKeyBuffer()
   }
+  
   /**
-   * @api Ecpair.toLegacyAddress() toLegacyAddress() - Get legacy address of ECPair.
-   * @apiName toLegacyAddress
-   * @apiGroup ECPair
-   * @apiDescription Get legacy address of ECPair.
+   * Get legacy address of ECPair.
    *
-   * @apiExample Example usage:
+   * @example
    *  // mainnet wif
    *  let wif = 'L5GPEGxCmojgzFoBLUUqT2GegLGqobiYhTZzfLtpkLTfTb9E9NRn';
    *  // ecpair from wif
@@ -137,13 +127,11 @@ class ECPair {
   static toLegacyAddress(ecpair) {
     return ecpair.getAddress()
   }
+  
   /**
-   * @api Ecpair.toCashAddress() toCashAddress() - Get cash address of ECPair.
-   * @apiName toCashAddress
-   * @apiGroup ECPair
-   * @apiDescription Get cash address of ECPair.
+   * Get cash address of ECPair.
    *
-   * @apiExample Example usage:
+   * @example
    *  // mainnet wif
    *  let wif = 'L5GPEGxCmojgzFoBLUUqT2GegLGqobiYhTZzfLtpkLTfTb9E9NRn';
    *  // ecpair from wif

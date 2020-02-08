@@ -18,13 +18,9 @@ class BitcoinCash {
   }
 
   /**
-   * @api BitcoinCash.toSatoshi() toSatoshi() - Converting Bitcoin Cash units to satoshi units.
-   * @apiName toSatoshi
-   * @apiGroup BitcoinCash
-   * @apiDescription
    * Converting Bitcoin Cash units to satoshi units.
    *
-   * @apiExample Example usage:
+   * @example
    * // convert 9 $BCH to satoshis
    * bchjs.BitcoinCash.toSatoshi(9)
    * // 900000000
@@ -51,13 +47,9 @@ class BitcoinCash {
   }
 
   /**
-   * @api BitcoinCash.toBitcoinCash() toBitcoinCash() - Converting satoshi units to Bitcoin Cash units.
-   * @apiName toBitcoinCash
-   * @apiGroup BitcoinCash
-   * @apiDescription
    * Converting satoshi units to Bitcoin Cash units.
    *
-   * @apiExample Example usage:
+   * @example
    * // convert 900000000 satoshis to $BCH
    * bchjs.BitcoinCash.toBitcoinCash(900000000)
    * // 9
@@ -84,13 +76,9 @@ class BitcoinCash {
   }
 
   /**
-   * @api BitcoinCash.toBits() toBits() - Converting satoshi units to Bits denomination.
-   * @apiName toBits
-   * @apiGroup BitcoinCash
-   * @apiDescription
    * Converting satoshi units to Bits denomination.
    *
-   * @apiExample Example usage:
+   * @example
    * // convert 4242323400 satoshis to 42423.234 bits
    * bchjs.BitcoinCash.toBits(4242323400)
    * // 42423.234
@@ -136,13 +124,9 @@ class BitcoinCash {
   // }
 
   /**
-   * @api BitcoinCash.signMessageWithPrivKey() signMessageWithPrivKey() - Sign message with private key.
-   * @apiName signMessageWithPrivKey
-   * @apiGroup BitcoinCash
-   * @apiDescription
    * Sign message with private key.
    *
-   * @apiExample Example usage:
+   * @example
    * bchjs.BitcoinCash.signMessageWithPrivKey(
    * 'KxtpRDUJDiutLaTV8Vuavhb6h7zq9YV9ZKA3dU79PCgYmNVmkkvS',
    * 'EARTH'
@@ -168,13 +152,9 @@ class BitcoinCash {
   }
 
   /**
-   * @api BitcoinCash.verifyMessage() verifyMessage() - Verify message.
-   * @apiName verifyMessage
-   * @apiGroup BitcoinCash
-   * @apiDescription
    * Verify message.
    *
-   * @apiExample Example usage:
+   * @example
    * bchjs.BitcoinCash.verifyMessage(
    * 'bitcoincash:qp2zvw3zpk5xx43w4tve7mtekd9kaxwj4uenq9eupv',
    * 'IIYVhlo2Z6TWFjYX1+YM+7vQKz0m+zYdSe4eYpFLuAQDEZXqll7lZC8Au22VI2LLP5x+IerZckVk3QQPsA3e8/8=',
@@ -192,13 +172,9 @@ class BitcoinCash {
   }
 
   /**
-   * @api BitcoinCash.encodeBase58Check() encodeBase58Check() - Encodes hex string as base58Check.
-   * @apiName encodeBase58Check
-   * @apiGroup BitcoinCash
-   * @apiDescription
    * Encodes hex string as base58Check.
    *
-   * @apiExample Example usage:
+   * @example
    * // encode 0079bd35d306f648350818470c9f18903df6e06902a026f2a7 as base58check
    * let hex = '0079bd35d306f648350818470c9f18903df6e06902a026f2a7'
    * bchjs.BitcoinCash.encodeBase58Check(hex)
@@ -230,13 +206,9 @@ class BitcoinCash {
   }
 
   /**
-   * @api BitcoinCash.decodeBase58Check() decodeBase58Check() - Decodes base58Check encoded string to hex.
-   * @apiName decodeBase58Check
-   * @apiGroup BitcoinCash
-   * @apiDescription
    * Decodes base58Check encoded string to hex.
    *
-   * @apiExample Example usage:
+   * @example
    * // decode 1C6hRmfzvWst5WA7bFRCVAqHt5gE2g7Qar to hex
    * let base58check = '1C6hRmfzvWst5WA7bFRCVAqHt5gE2g7Qar'
    * bchjs.BitcoinCash.decodeBase58Check(base58check)
@@ -268,13 +240,9 @@ class BitcoinCash {
   }
 
   /**
-   * @api BitcoinCash.encodeBIP21() encodeBIP21() - Encodes address and options as BIP21 uri.
-   * @apiName encodeBIP21
-   * @apiGroup BitcoinCash
-   * @apiDescription
    * Encodes address and options as BIP21 uri.
    *
-   * @apiExample Example usage:
+   * @example
    * let address = 'bitcoincash:qrdsfshx7yzfjl9sfj2khuja5crcu4vaxqrt2qkz5s'
    * let options = {
    * amount: 1,
@@ -309,13 +277,9 @@ class BitcoinCash {
   }
 
   /**
-   * @api BitcoinCash.decodeBIP21() decodeBIP21() - Decodes BIP21 uri.
-   * @apiName decodeBIP21
-   * @apiGroup BitcoinCash
-   * @apiDescription
    * Decodes BIP21 uri.
    *
-   * @apiExample Example usage:
+   * @example
    * let bip21 =
    * 'bitcoincash:qrdsfshx7yzfjl9sfj2khuja5crcu4vaxqrt2qkz5s?amount=1&label=%23BCHForEveryone'
    * bchjs.BitcoinCash.decodeBIP21(bip21)
@@ -343,13 +307,9 @@ class BitcoinCash {
   }
 
   /**
-   * @api BitcoinCash.getByteCount() getByteCount() - Get byte count of transaction.
-   * @apiName getByteCount
-   * @apiGroup BitcoinCash
-   * @apiDescription
    * Get byte count of transaction.
    *
-   * @apiExample Example usage:
+   * @example
    * // 1 P2PKH input
    * let inputs = {
    * P2PKH: 1,
@@ -461,13 +421,9 @@ class BitcoinCash {
   }
 
   /**
-   * @api BitcoinCash.encryptBIP38() encryptBIP38() - BIP38 encrypt privkey WIFs.
-   * @apiName encryptBIP38
-   * @apiGroup BitcoinCash
-   * @apiDescription
    * BIP38 encrypt privkey WIFs.
    *
-   * @apiExample Example usage:
+   * @example
    * // mainnet
    * bchjs.BitcoinCash.encryptBIP38(
    *  'L1phBREbhL4vb1uHHHCAse8bdGE5c7ic2PFjRxMawLzQCsiFVbvu',
@@ -489,13 +445,9 @@ class BitcoinCash {
   }
 
   /**
-   * @api BitcoinCash.decryptBIP38() decryptBIP38() - BIP38 encrypt privkey WIFs.
-   * @apiName decryptBIP38
-   * @apiGroup BitcoinCash
-   * @apiDescription
    * BIP38 encrypt privkey WIFs.
    *
-   * @apiExample Example usage:
+   * @example
    * // mainnet
    * bchjs.BitcoinCash.decryptBIP38(
    * '6PYU2fDHRVF2194gKDGkbFbeu4mFgkWtVvg2RPd2Sp6KmZx3RCHFpgBB2G',

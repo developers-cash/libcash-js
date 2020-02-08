@@ -13,13 +13,9 @@ class Mnemonic {
   }
 
   /**
-   * @api Mnemonic.generate() generate() - Generate BIP39 mnemonic from entropy.
-   * @apiName generate
-   * @apiGroup Mnemonic
-   * @apiDescription
    * Generate BIP39 mnemonic from entropy.
    *
-   * @apiExample Example usage:
+   * @example
    * // generate 12 word mnemonic
    * bchjs.Mnemonic.generate(128);
    * // boil lonely casino manage habit where total glory muffin name limit mansion
@@ -53,13 +49,9 @@ class Mnemonic {
   }
 
   /**
-   * @api Mnemonic.fromEntropy() fromEntropy() - Create mnemonic from entropy.
-   * @apiName fromEntropy
-   * @apiGroup Mnemonic
-   * @apiDescription
    * Create mnemonic from entropy.
    *
-   * @apiExample Example usage:
+   * @example
    * // generate 16 bytes of entropy
    * let entropy = bchjs.Crypto.randomBytes(16);
    * //
@@ -107,13 +99,9 @@ class Mnemonic {
   }
 
   /**
-   * @api Mnemonic.toEntropy() toEntropy() - Turn mnemonic to entropy.
-   * @apiName toEntropy
-   * @apiGroup Mnemonic
-   * @apiDescription
    * Turn mnemonic to entropy.
    *
-   * @apiExample Example usage:
+   * @example
    * // turn 12 word mnemonic to entropy
    * let mnemonic = 'security question relief cruel nephew jump chest copper axis assist gift correct';
    * bchjs.Mnemonic.toEntropy(mnemonic)
@@ -144,13 +132,9 @@ class Mnemonic {
   }
 
   /**
-   * @api Mnemonic.validate() validate() - Validate mnemonic.
-   * @apiName validate
-   * @apiGroup Mnemonic
-   * @apiDescription
    * Validate mnemonic.
    *
-   * @apiExample Example usage:
+   * @example
    * bchjs.Mnemonic.validate('ca', bchjs.Mnemonic.wordLists().english)
    * // ca is not in wordlist, did you mean cabbage?
    *
@@ -184,13 +168,9 @@ class Mnemonic {
   }
 
   /**
-   * @api Mnemonic.toSeed() toSeed() - Create root seed from mnemonic
-   * @apiName toSeed
-   * @apiGroup Mnemonic
-   * @apiDescription
    * Create root seed from mnemonic. Returns a Promise.
    *
-   * @apiExample Example usage:
+   * @example
    * await bchjs.Mnemonic.toSeed('enable stem left method one submit coach bid inspire cluster armed bracket')
    * // <Buffer 0a fa b7 46 8f 0c df 79 0f 0e 44 37 45 0c 33 c3 c8 27 17 42 75 d6 13 02 c3 55 de ef 2e 69 57 e4 f5 dd 55 b6 a8 73 78 6d b8 09 36 75 af 4f 6b 2c 52 63 ... >
    *
@@ -211,13 +191,9 @@ class Mnemonic {
   }
 
   /**
-   * @api Mnemonic.wordLists() wordLists() - Return mnemonic word lists.
-   * @apiName wordLists
-   * @apiGroup Mnemonic
-   * @apiDescription
    * Return mnemonic word lists.
    *
-   * @apiExample Example usage:
+   * @example
    * bchjs.Mnemonic.wordLists();
    * // {
    * //   EN: [],
@@ -237,13 +213,9 @@ class Mnemonic {
   }
 
   /**
-   * @api Mnemonic.toKeypairs() toKeypairs() - Returns an array of privateKeyWIF/publicAddress pairs.
-   * @apiName toKeypairs
-   * @apiGroup Mnemonic
-   * @apiDescription
    * Returns an array of privateKeyWIF/publicAddress pairs. It generates the addresses as the nth external change address of the first account from that mnemonic w/ this derivation path: m/44’/145’/0’/0/n
    *
-   * @apiExample Example usage:
+   * @example
    * // First create a mnemonic from 32 bytes of random entropy
    * let entropy = bchjs.Crypto.randomBytes(32);
    * // <Buffer bd 94 ad 86 be 19 5e 6c 51 b1 aa 52 b3 61 0b f8 9a 5d db 43 ac ee 8a ea 3a 38 6c ac 75 9e b5 42>
@@ -293,13 +265,9 @@ class Mnemonic {
   }
 
   /**
-   * @api Mnemonic.findNearestWord() findNearestWord() - Returns nearest matching word from provided word list.
-   * @apiName findNearestWord
-   * @apiGroup Mnemonic
-   * @apiDescription
    * Returns nearest matching word from provided word list.
    *
-   * @apiExample Example usage:
+   * @example
    * // english
    * let word = 'ab';
    * let wordlist = bchjs.Mnemonic.wordLists().english;

@@ -12,13 +12,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.fromSeed() fromSeed() - Create HDNode from Seed Buffer.
-   * @apiName fromSeed
-   * @apiGroup HDNode
-   * @apiDescription
    * HDNode stands for Hierarchically Deterministic node which can be used to create a HD wallet.
    *
-   * @apiExample Example usage:
+   * @example
    *   // create mnemonic
    *   let mnemonic = bchjs.Mnemonic.generate(128);
    *   // create seed buffer from mnemonic
@@ -49,13 +45,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.toLegacyAddress() toLegacyAddress() - Get legacy address of HDNode.
-   * @apiName toLegacyAddress
-   * @apiGroup HDNode
-   * @apiDescription
    * Get legacy address of HDNode
    *
-   * @apiExample Example usage:
+   * @example
    *   // create mnemonic
    *   let mnemonic = bchjs.Mnemonic.generate(128);
    *   // create seed buffer from mnemonic
@@ -83,13 +75,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.toCashAddress() toCashAddress() - Get cash address of HDNode
-   * @apiName toCashAddress
-   * @apiGroup HDNode
-   * @apiDescription
    * Get cash address of HDNode.
    *
-   * @apiExample Example usage:
+   * @example
    *   // create mnemonic
    *   let mnemonic = bchjs.Mnemonic.generate(128);
    *   // create seed buffer from mnemonic
@@ -117,12 +105,9 @@ class HDNode {
   }
 
   /**
-   * @api SLP.HDNode.toSLPAddress() toSLPAddress() - Get slp address of HDNode.
-   * @apiName toSLPAddress
-   * @apiGroup SLP
-   * @apiDescription Get slp address of HDNode.
+   * Get slp address of HDNode.
    *
-   * @apiExample Example usage:
+   * @example
    * // create mnemonic
    * let mnemonic = bchjs.Mnemonic.generate(128);
    * // create seed buffer from mnemonic
@@ -151,13 +136,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.toWIF() toWIF() - Get private key in wallet import format (WIF) of HDNode.
-   * @apiName toWIF
-   * @apiGroup HDNode
-   * @apiDescription
    * Get private key in wallet import format (WIF) of HDNode.
    *
-   * @apiExample Example usage:
+   * @example
    *   // create mnemonic
    *   let mnemonic = bchjs.Mnemonic.generate(128);
    *   // create seed buffer from mnemonic
@@ -185,13 +166,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.toXPub() toXPub() - Get extended public key of HDNode.
-   * @apiName toXPub
-   * @apiGroup HDNode
-   * @apiDescription
    * Get extended public key of HDNode.
    *
-   * @apiExample Example usage:
+   * @example
    *   // create mnemonic
    *   let mnemonic = bchjs.Mnemonic.generate(128);
    *   // create seed buffer from mnemonic
@@ -219,13 +196,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.toXPriv() toXPriv() - Get extended private key of HDNode.
-   * @apiName toXPriv
-   * @apiGroup HDNode
-   * @apiDescription
    * Get extended private key of HDNode.
    *
-   * @apiExample Example usage:
+   * @example
    *   // create mnemonic
    *   let mnemonic = bchjs.Mnemonic.generate(128);
    *   // create seed buffer from mnemonic
@@ -253,13 +226,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.toKeyPair() toKeyPair() - Get the ECPair of an HDNode.
-   * @apiName toKeyPair
-   * @apiGroup HDNode
-   * @apiDescription
    * Get the ECPair of an HDNode.
    *
-   * @apiExample Example usage:
+   * @example
    *   // create mnemonic
    *   let mnemonic = bchjs.Mnemonic.generate(128);
    *   // create root seed buffer from mnemonic
@@ -285,13 +254,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.toPublicKey() toPublicKey() - Get the public key of an HDNode as a buffer.
-   * @apiName toPublicKey
-   * @apiGroup HDNode
-   * @apiDescription
    * Get the public key of an HDNode as a buffer.
    *
-   * @apiExample Example usage:
+   * @example
    *   // create mnemonic
    *   let mnemonic = bchjs.Mnemonic.generate(128);
    *   // create root seed buffer from mnemonic
@@ -319,13 +284,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.fromXPriv() fromXPriv() - Generate HDNode from extended private key.
-   * @apiName fromXPriv
-   * @apiGroup HDNode
-   * @apiDescription
    * Generate HDNode from extended private key.
    *
-   * @apiExample Example usage:
+   * @example
    *   // mainnet xpriv
    *   bchjs.HDNode.fromXPriv('xprv9s21ZrQH143K2b5GPP6zHz22E6LeCgQXJtwNbC3MA3Kz7Se7tveKo96EhqwFtSkYWkyenVcMqM7uq35PcUNG8cUdpsJEgwKG3dvfP7TmL3v');
    *
@@ -342,13 +303,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.fromXPub() fromXPub() - Generate HDNode from extended public key.
-   * @apiName fromXPub
-   * @apiGroup HDNode
-   * @apiDescription
    * Generate HDNode from extended public key.
    *
-   * @apiExample Example usage:
+   * @example
    *   // mainnet xpub
    *   bchjs.HDNode.fromXPub('xpub661MyMwAqRbcFuMLeHkSbTNwNHG9MQyrAZqV1Q4MEAsmj9MYa5sxg8WC2LKqW6EHviHVucBjWi1n38juZpDDeX3U6YrsMeACdcNSTHkM8BQ');
    *
@@ -365,13 +322,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.derivePath() derivePath() - Derive child HDNode from path.
-   * @apiName derivePath
-   * @apiGroup HDNode
-   * @apiDescription
    * Derive child HDNode from path
    *
-   * @apiExample Example usage:
+   * @example
    *   // create mnemonic
    *   let mnemonic = bchjs.Mnemonic.generate(128);
    *   // create seed buffer from mnemonic
@@ -386,13 +339,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.derive() derive() - Derive non hardened child HDNode.
-   * @apiName derive
-   * @apiGroup HDNode
-   * @apiDescription
    * Derive non hardened child HDNode
    *
-   * @apiExample Example usage:
+   * @example
    *   // create mnemonic
    *   let mnemonic = bchjs.Mnemonic.generate(128);
    *   // create seed buffer from mnemonic
@@ -407,13 +356,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.deriveHardened() deriveHardened() - Derive hardened child HDNode.
-   * @apiName deriveHardened
-   * @apiGroup HDNode
-   * @apiDescription
    * Derive hardened child HDNode
    *
-   * @apiExample Example usage:
+   * @example
    *   // create mnemonic
    *   let mnemonic = bchjs.Mnemonic.generate(128);
    *   // create seed buffer from mnemonic
@@ -428,13 +373,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.sign() sign() - Sign 32 byte hash encoded as a buffer.
-   * @apiName sign
-   * @apiGroup HDNode
-   * @apiDescription
    * Sign 32 byte hash encoded as a buffer.
    *
-   * @apiExample Example usage:
+   * @example
    *   // mainnet xpriv
    *   let xpriv = 'xprv9z2uWrGjbYPxc728rvtMi4jt4SudRiSfYn6Tdif5XN17pJ1NTbHoHK6JePkPLY1NHXLaQcA6sWudpZDm7DwKhbsGQieAp9wx46Wbio4iXg9';
    *   // hdnode from xpriv
@@ -458,13 +399,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.verify() verify() - Verify signed 32 byte hash encoded as a buffer.
-   * @apiName verify
-   * @apiGroup HDNode
-   * @apiDescription
    * Verify signed 32 byte hash encoded as a buffer.
    *
-   * @apiExample Example usage:
+   * @example
    *   // mainnet xprivs
    *   let xpriv1 = 'xprv9ys4cvcoU8RoqvzxGj886r4Ey3w1WfVNYH8sMnVPVzyQtaPPM6Q8pHm3D9WPWvEupGEgcJ1xLaGaZDcvKfoAurE2AzHRRRup5FuHzDr8n15';
    *   let xpriv2 = 'xprv9ys4cvcoU8RoxqkZ7Fgt33te4LPHgcsKwyoZYVorkzp9uonWxWgP9wiSQhPeBUqVHbdAyov4Yi55RywBkDfZKdJFRqA51Anz6v72zGaMGZp';
@@ -502,13 +439,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.isPublic() isPublic() - Check if an HDNode can only derive public keys and children.
-   * @apiName isPublic
-   * @apiGroup HDNode
-   * @apiDescription
    * Check if an HDNode can only derive public keys and children
    *
-   * @apiExample Example usage:
+   * @example
    *   // mainnet xpub
    *   let xpub = 'xpub6DWfGUo4cjC8oWmgZdpyFMH6v3oeyADfdUPhsehzn5jX44zpazivha3JxUtkcCvBEB1c6DGaiUmpyz2m1DRfGDEVZ5VxLLW2UNEbZ5iTRvi';
    *   let node = bchjs.HDNode.fromXPub(xpub);
@@ -538,13 +471,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.isPrivate() isPrivate() - Check if an HDNode can derive both public and private keys and children.
-   * @apiName isPrivate
-   * @apiGroup HDNode
-   * @apiDescription
    * Check if an HDNode can derive both public and private keys and children
    *
-   * @apiExample Example usage:
+   * @example
    *   // mainnet xpub
    *   let xpub = 'xpub6DWfGUo4cjC8oWmgZdpyFMH6v3oeyADfdUPhsehzn5jX44zpazivha3JxUtkcCvBEB1c6DGaiUmpyz2m1DRfGDEVZ5VxLLW2UNEbZ5iTRvi';
    *   let node = bchjs.HDNode.fromXPub(xpub);
@@ -574,13 +503,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.toIdentifier() toIdentifier() - hash160 of Node’s public key.
-   * @apiName toIdentifier
-   * @apiGroup HDNode
-   * @apiDescription
    * hash160 of Node’s public key. The same value you would see in a scriptPubKey.
    *
-   * @apiExample Example usage:
+   * @example
    *   // mainnet
    *   let xpub = 'xpub6DWfGUo4cjC8oWmgZdpyFMH6v3oeyADfdUPhsehzn5jX44zpazivha3JxUtkcCvBEB1c6DGaiUmpyz2m1DRfGDEVZ5VxLLW2UNEbZ5iTRvi';
    *   let node = bchjs.HDNode.fromXPub(xpub);
@@ -610,13 +535,9 @@ class HDNode {
   }
 
   /**
-   * @api HDNode.createAccount() createAccount() - Create BIP32 account.
-   * @apiName createAccount
-   * @apiGroup HDNode
-   * @apiDescription
    * Has getChainAddress and nextChainAddress helper methods.
    *
-   * @apiExample Example usage:
+   * @example
    *   // create mnemonic
    *   let mnemonic = bchjs.Mnemonic.generate(128);
    *   // create root seed buffer

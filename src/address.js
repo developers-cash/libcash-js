@@ -8,12 +8,9 @@ const coininfo = require("coininfo")
  */
 class Address {
   /**
-   * @api Address.toLegacyAddress() toLegacyAddress() - Convert to Legacy Address
-   * @apiName toLegacyAddress
-   * @apiGroup Address
-   * @apiDescription Convert cashaddr to legacy address format
+   * Convert cashaddr to legacy address format
    *
-   * @apiExample Example usage:
+   * @example
    * // mainnet w/ prefix
    * bchjs.Address.toLegacyAddress('bitcoincash:qzm47qz5ue99y9yl4aca7jnz7dwgdenl85jkfx3znl')
    * // 1HiaTupadqQN66Tvgt7QSE5Wg13BUy25eN
@@ -67,12 +64,9 @@ class Address {
   }
 
   /**
-   * @api Address.toCashAddress() toCashAddress() - Convert to bitcoincash: format
-   * @apiName toCashAddress
-   * @apiGroup Address
-   * @apiDescription Convert legacy to cashAddress format
+   * Convert legacy to cashAddress format
    *
-   * @apiExample Example usage:
+   * @example
    * // mainnet
    * bchjs.Address.toCashAddress('1HiaTupadqQN66Tvgt7QSE5Wg13BUy25eN')
    * // bitcoincash:qzm47qz5ue99y9yl4aca7jnz7dwgdenl85jkfx3znl
@@ -114,12 +108,9 @@ class Address {
   }
 
   /**
-   * @api Address.hash160ToLegacy() hash160ToLegacy() - Convert hash160 to legacy address.
-   * @apiName hash160ToLegacy
-   * @apiGroup Address
-   * @apiDescription Convert hash160 to legacy address.
+   * Convert hash160 to legacy address.
    *
-   * @apiExample Example usage:
+   * @example
    * // legacy mainnet p2pkh
    * bchjs.Address.hash160ToLegacy("573d93b475be4f1925f3b74ed951201b0147eac1")
    * // 18xHZ8g2feo4ceejGpvzHkvXT79fi2ZdTG
@@ -140,12 +131,9 @@ class Address {
   }
 
   /**
-   * @api Address.hash160ToCash() hash160ToCash() - Convert hash160 to cash address.
-   * @apiName hash160ToCash
-   * @apiGroup Address
-   * @apiDescription Convert hash160 to cash address.
+   * Convert hash160 to cash address.
    *
-   * @apiExample Example usage:
+   * @example
    * bchjs.Address.hash160ToCash("573d93b475be4f1925f3b74ed951201b0147eac1")
    * 'bitcoincash:qptnmya5wkly7xf97wm5ak23yqdsz3l2cyj7k9vyyh'
    * bchjs.Address.hash160ToCash("7dc85da64d1d93ef01ef62e0221c02f512e3942f", 0x05)
@@ -249,12 +237,9 @@ class Address {
   }
 
   /**
-   * @api Address.isLegacyAddress() isLegacyAddress() - Detect if legacy address.
-   * @apiName isLegacyAddress
-   * @apiGroup Address
-   * @apiDescription Detect if legacy base58check encoded address.
+   * Detect if legacy base58check encoded address.
    *
-   * @apiExample Example usage:
+   * @example
    *  // cashaddr
    * bchjs.Address.isLegacyAddress('bitcoincash:qqfx3wcg8ts09mt5l3zey06wenapyfqq2qrcyj5x0s')
    * // false
@@ -285,12 +270,9 @@ class Address {
   }
 
   /**
-   * @api Address.isCashAddress() isCashAddress() - Detect if cashAddr address.
-   * @apiName isCashAddress
-   * @apiGroup Address
-   * @apiDescription Detect if cashAddr encoded address.
+   * Detect if cashAddr encoded address.
    *
-   * @apiExample Example usage:
+   * @example
    * // mainnet cashaddr
    * bchjs.Address.isCashAddress('bitcoincash:qqfx3wcg8ts09mt5l3zey06wenapyfqq2qrcyj5x0s')
    * // true
@@ -320,12 +302,9 @@ class Address {
   }
 
   /**
-   * @api Address.isHash160() isHash160() - Detect if an addess is a hash160.
-   * @apiName isHash160
-   * @apiGroup Address
-   * @apiDescription Detect if an addess is a hash160.
+   * Detect if an addess is a hash160.
    *
-   * @apiExample Example usage:
+   * @example
    *  let hash160Address = '428df38e23fc879a25819427995c3e6355b12d33';
    *  bchjs.Address.isHash160(hash160Address);
    *  // true
@@ -339,12 +318,9 @@ class Address {
   }
 
   /**
-   * @api Address.isMainnetAddress() isMainnetAddress() - Detect if mainnet address.
-   * @apiName isMainnetAddress
-   * @apiGroup Address
-   * @apiDescription Detect if mainnet address .
+   * Detect if mainnet address .
    *
-   * @apiExample Example usage:
+   * @example
    *  // mainnet cashaddr
    * bchjs.Address.isMainnetAddress('bitcoincash:qqfx3wcg8ts09mt5l3zey06wenapyfqq2qrcyj5x0s')
    * // true
@@ -378,12 +354,9 @@ class Address {
   }
 
   /**
-   * @api Address.isTestnetAddress() isTestnetAddress() - Detect if testnet address.
-   * @apiName isTestnetAddress
-   * @apiGroup Address
-   * @apiDescription Detect if testnet address.
+   * Detect if testnet address.
    *
-   * @apiExample Example usage:
+   * @example
    *   // cashaddr mainnet
    * bchjs.Address.isTestnetAddress('bitcoincash:qqfx3wcg8ts09mt5l3zey06wenapyfqq2qrcyj5x0s')
    * //false
@@ -416,12 +389,9 @@ class Address {
   }
 
   /**
-   * @api Address.isRegTestAddress() isRegTestAddress() - Detect if regtest address.
-   * @apiName isRegTestAddress
-   * @apiGroup Address
-   * @apiDescription Detect if regtest address.
+   * Detect if regtest address.
    *
-   * @apiExample Example usage:
+   * @example
    *   // regtest
    * bchjs.Address.isRegTestAddress('bchreg:qzq9je6pntpva3wf6scr7mlnycr54sjgequ54zx9lh')
    * // true
@@ -455,12 +425,9 @@ class Address {
   }
 
   /**
-   * @api Address.isP2PKHAddress() isP2PKHAddress() - Detect if p2pkh address.
-   * @apiName isP2PKHAddress
-   * @apiGroup Address
-   * @apiDescription Detect if p2pkh address.
+   * Detect if p2pkh address.
    *
-   * @apiExample Example usage:
+   * @example
    *   // cashaddr
    *  bchjs.Address.isP2PKHAddress('bitcoincash:qqfx3wcg8ts09mt5l3zey06wenapyfqq2qrcyj5x0s')
    *  // true
@@ -492,12 +459,9 @@ class Address {
   }
 
   /**
-   * @api Address.isP2SHAddress() isP2SHAddress() - Detect if p2sh address.
-   * @apiName isP2SHAddress
-   * @apiGroup Address
-   * @apiDescription Detect if p2sh address.
+   * Detect if p2sh address.
    *
-   * @apiExample Example usage:
+   * @example
    *   // cashaddr
    *  bchjs.Address.isP2SHAddress('bitcoincash:qqfx3wcg8ts09mt5l3zey06wenapyfqq2qrcyj5x0s')
    *  // false
@@ -528,12 +492,9 @@ class Address {
   }
 
   /**
-   * @api Address.detectAddressFormat() detectAddressFormat() - Detect address format.
-   * @apiName detectAddressFormat
-   * @apiGroup Address
-   * @apiDescription Detect address format.
+   * Detect address format.
    *
-   * @apiExample Example usage:
+   * @example
    *   // cashaddr
    *  bchjs.Address.detectAddressFormat('bitcoincash:qqfx3wcg8ts09mt5l3zey06wenapyfqq2qrcyj5x0s')
    *  // cashaddr
@@ -566,12 +527,9 @@ class Address {
   }
 
   /**
-   * @api Address.detectAddressNetwork() detectAddressNetwork() - Detect address network.
-   * @apiName detectAddressNetwork
-   * @apiGroup Address
-   * @apiDescription Detect address network.
+   * Detect address network.
    *
-   * @apiExample Example usage:
+   * @example
    *   // cashaddr
    *  bchjs.Address.detectAddressNetwork('bitcoincash:qqfx3wcg8ts09mt5l3zey06wenapyfqq2qrcyj5x0s')
    *  // mainnet
@@ -616,12 +574,9 @@ class Address {
   }
 
   /**
-   * @api Address.detectAddressType() detectAddressType() - Detect address type.
-   * @apiName detectAddressType
-   * @apiGroup Address
-   * @apiDescription Detect address type.
+   * Detect address type.
    *
-   * @apiExample Example usage:
+   * @example
    *   // cashaddr
    *  bchjs.Address.detectAddressType('bitcoincash:qqfx3wcg8ts09mt5l3zey06wenapyfqq2qrcyj5x0s');
    *  // p2pkh
@@ -654,12 +609,9 @@ class Address {
   }
 
   /**
-   * @api Address.fromXPub() fromXPub() - Generates an address (xpub).
-   * @apiName fromXPub
-   * @apiGroup Address
-   * @apiDescription Generates an address for an extended public key (xpub).
+   * Generates an address for an extended public key (xpub).
    *
-   * @apiExample Example usage:
+   * @example
    *   // generate 5 mainnet external change addresses for xpub6DTNmB7gWa8RtQAfmy8wSDikM5mky4fhsnqQd9AqoCaLcekqNgRZW5JCSXwXkLDkABHTD1qx7kqrbGzT6xBGfAvCJSj2rwvKWP8eZBR2EVA
    *  let xpub = 'xpub6DTNmB7gWa8RtQAfmy8wSDikM5mky4fhsnqQd9AqoCaLcekqNgRZW5JCSXwXkLDkABHTD1qx7kqrbGzT6xBGfAvCJSj2rwvKWP8eZBR2EVA';
    *  for(let i = 0; i <= 4; i++) {
@@ -692,12 +644,9 @@ class Address {
   }
 
   /**
-   * @api Address.fromOutputScript() fromOutputScript() - Detect an addess from an OutputScript..
-   * @apiName fromOutputScript
-   * @apiGroup Address
-   * @apiDescription Detect an addess from an OutputScript..
+   * Detect an addess from an OutputScript..
    *
-   * @apiExample Example usage:
+   * @example
    *  const script = bchjs.Script.encode([
    *    Buffer.from("BOX", "ascii"),
    *    bchjs.Script.opcodes.OP_CAT,

@@ -5,13 +5,9 @@ const schnorr = require("bip-schnorr")
  */
 class Schnorr {
   /**
-   * @api Schnorr.sign() sign() - Sign a 32-byte message with the private key, returning a 64-byte signature.
-   * @apiName sign
-   * @apiGroup Schnorr
-   * @apiDescription
    * Sign a 32-byte message with the private key, returning a 64-byte signature.
    *
-   * @apiExample Example usage:
+   * @example
    * const Buffer = require("safe-buffer").Buffer
    * const BigInteger = require("bigi")
    *
@@ -32,13 +28,9 @@ class Schnorr {
   }
 
   /**
-   * @api Schnorr.verify() verify() - Verify a 64-byte signature of a 32-byte message against the public key.
-   * @apiName verify
-   * @apiGroup Schnorr
-   * @apiDescription
    * Verify a 64-byte signature of a 32-byte message against the public key. Throws an Error if verification fails.
    *
-   * @apiExample Example usage:
+   * @example
    * const Buffer = require("safe-buffer").Buffer
    * const publicKey = Buffer.from(
    * "02DFF1D77F2A671C5F36183726DB2341BE58FEAE1DA2DECED843240F7B502BA659",
@@ -64,13 +56,9 @@ class Schnorr {
   }
 
   /**
-   * @api Schnorr.batchVerify() batchVerify() - Verify a list of 64-byte signatures as a batch operation.
-   * @apiName batchVerify
-   * @apiGroup Schnorr
-   * @apiDescription
    * Verify a list of 64-byte signatures as a batch operation. Throws an Error if verification fails.
    *
-   * @apiExample Example usage:
+   * @example
    * const Buffer = require("safe-buffer").Buffer
    * const publicKeys = [
    * Buffer.from(
@@ -126,15 +114,11 @@ class Schnorr {
   }
 
   /**
-   * @api Schnorr.nonInteractive() nonInteractive() - Aggregates multiple signatures of different private keys
-   * @apiName nonInteractive
-   * @apiGroup Schnorr
-   * @apiDescription
    * Aggregates multiple signatures of different private keys over the same message into a single 64-byte signature using a scheme that is safe from rogue-key attacks.
    *
    * This non-interactive scheme requires the knowledge of all private keys that are participating in the multi-signature creation.
    *
-   * @apiExample Example usage:
+   * @example
    * const Buffer = require("safe-buffer").Buffer
    * const BigInteger = require("bigi")
    *
@@ -175,13 +159,9 @@ class Schnorr {
   }
 
   /**
-   * @api Schnorr.computeEll() computeEll() - Generate ell which is the hash over all public keys participating in a session.
-   * @apiName computeEll
-   * @apiGroup Schnorr
-   * @apiDescription
    * Generate ell which is the hash over all public keys participating in a session.
    *
-   * @apiExample Example usage:
+   * @example
    * const Buffer = require("safe-buffer").Buffer
    * const BigInteger = require("bigi")
    *
@@ -249,13 +229,9 @@ class Schnorr {
   }
 
   /**
-   * @api Schnorr.publicKeyCombine() publicKeyCombine() - Creates a special rogue-key-resistant.
-   * @apiName publicKeyCombine
-   * @apiGroup Schnorr
-   * @apiDescription
    * Creates the special rogue-key-resistant combined public key P by applying the MuSig coefficient to each public key P_i before adding them together.
    *
-   * @apiExample Example usage:
+   * @example
    * // continued from above
    * publicData.pubKeyCombined = bchjs.Schnorr.publicKeyCombine(
    * publicData.pubKeys,
@@ -267,13 +243,9 @@ class Schnorr {
   }
 
   /**
-   * @api Schnorr.sessionInitialize() sessionInitialize() - Creates a signing session.
-   * @apiName sessionInitialize
-   * @apiGroup Schnorr
-   * @apiDescription
    * Creates a signing session. Each participant must create a session and must not share the content of the session apart from the commitment and later the nonce.
    *
-   * @apiExample Example usage:
+   * @example
    * // continued from above
    * // -----------------------------------------------------------------------
    * // Step 2: Create the private signing session
@@ -306,13 +278,9 @@ class Schnorr {
   }
 
   /**
-   * @api Schnorr.sessionNonceCombine() sessionNonceCombine() - Combines multiple nonces R_i into the combined nonce R.
-   * @apiName sessionNonceCombine
-   * @apiGroup Schnorr
-   * @apiDescription
    * Combines multiple nonces R_i into the combined nonce R.
    *
-   * @apiExample Example usage:
+   * @example
    * // continued from above
    * // -----------------------------------------------------------------------
    * // Step 3: Exchange commitments (communication round 1)
@@ -351,13 +319,9 @@ class Schnorr {
   }
 
   /**
-   * @api Schnorr.partialSign() partialSign() - Creates a partial signature s_i for a participant.
-   * @apiName partialSign
-   * @apiGroup Schnorr
-   * @apiDescription
    * Creates a partial signature s_i for a participant.
    *
-   * @apiExample Example usage:
+   * @example
    * // continued from above
    * // -----------------------------------------------------------------------
    * // Step 6: Generate partial signatures
@@ -383,13 +347,9 @@ class Schnorr {
   }
 
   /**
-   * @api Schnorr.partialSignatureVerify() partialSignatureVerify() - Verifies a partial signature s_i against the participant's public key P_i.
-   * @apiName partialSignatureVerify
-   * @apiGroup Schnorr
-   * @apiDescription
    * Verifies a partial signature s_i against the participant's public key P_i. Throws an Error if verification fails.
    *
-   * @apiExample Example usage:
+   * @example
    * // continued from above
    * // -----------------------------------------------------------------------
    * // Step 7: Exchange partial signatures (communication round 3)
@@ -436,13 +396,9 @@ class Schnorr {
   }
 
   /**
-   * @api Schnorr.partialSignaturesCombine() partialSignaturesCombine() - Combines multiple partial signatures into a Schnorr signature.
-   * @apiName partialSignaturesCombine
-   * @apiGroup Schnorr
-   * @apiDescription
    * Combines multiple partial signatures into a Schnorr signature (s, R) that can be verified against the combined public key P.
    *
-   * @apiExample Example usage:
+   * @example
    * // continued from above
    * // -----------------------------------------------------------------------
    * // Step 9: Combine partial signatures

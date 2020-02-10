@@ -11,7 +11,7 @@
   "scripts": {
     "test": "nyc mocha --timeout 30000 test/unit",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "docs": "./node_modules/.bin/apidoc -i src/ -o docs"
+    "docs": "node gen-docs.js"
   },
   "license": "MIT",
   "homepage": "https://github.com/developers-cash/libcash-js",
@@ -64,6 +64,7 @@
     "apidoc": "^0.17.7",
     "chai": "^4.1.2",
     "coveralls": "^3.0.2",
+    "documentation": "^12.1.4",
     "eslint": "5.16.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-node": "^9.1.0",

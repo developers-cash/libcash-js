@@ -603,6 +603,11 @@ function reverseBuffer(buffer) {
 }
 exports.reverseBuffer = reverseBuffer;
 
+const bufferutils = {
+  readUInt64LE: readUInt64LE,
+  writeUInt64LE: writeUInt64LE
+};
+
 /**
  * Helper class for serialization of bitcoin data types into a pre-allocated buffer.
  * @private

@@ -15,7 +15,10 @@ class TransactionBuilder {
     let bitcoincash
     if (network === "bitcoincash" || network === "mainnet")
       bitcoincash = coininfo.bitcoincash.main
-    else bitcoincash = coininfo.bitcoincash.test
+    else if (network === 'regtest')
+      bitcoincash = coininfo.bitcoincash.regtest
+    else
+      bitcoincash = coininfo.bitcoincash.test
 
     const bitcoincashBitcoinJSLib = bitcoincash.toBitcoinJS()
     this.transaction = new Bitcoin.TransactionBuilder(bitcoincashBitcoinJSLib)

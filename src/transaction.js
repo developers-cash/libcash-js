@@ -168,6 +168,24 @@ class Transaction {
     }) - 1)
   }
   
+  hasOutput(output) {
+    for (let txOut of this.outs) {
+      if (output.value === txOut.script.value) { // TODO Check output script
+        return true
+      }
+    }
+    
+    return false;
+  }
+  
+  hasOutputs(outputs) {
+    for (let output of outputs) {
+      if (!this.hasOutput(output)) {
+        return false;
+      }
+    }
+  }
+  
   hasWitnesses() {
     return this.ins.some(function (x) {
       return x.witness.length !== 0

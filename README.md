@@ -6,7 +6,7 @@ Although it can be used as a stand-alone library - it is intended to be used as 
 
 For example, the Flowee-JS package extends this class, providing the Flowee SDK with many functions that would be required in typical BCH use-cases.
 
-```
+```javascript
 /**
  * The Flowee Class will now have all the features/functions of the LibCash-JS Library
  */
@@ -21,7 +21,7 @@ class Flowee extends LibCash {
 
 - Instantiate in your code:
 
-```
+```javascript
 const LibCash = require("@developers.cash/libcash-js")
 
 // Stand-alone

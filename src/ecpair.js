@@ -66,7 +66,7 @@ class ECPair {
 
   static verify(ecpair, buffer, signature) {
     if (signature instanceof Buffer) {
-      signature = BitcoinCashJS.ECSignature.fromDER(signature)
+      signature = Bitcoin.ECSignature.fromDER(signature)
     }
     
     return ecpair.verify(buffer, signature)

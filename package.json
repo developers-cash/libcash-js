@@ -1,6 +1,6 @@
 {
   "name": "@developers.cash/libcash-js",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "description": "Pure Bitcoin Cash JavaScript Library based on Chris Troutner's BCH-JS library.",
   "author": "Jim Hamill <jimtendo@protonmail.com>",
   "contributors": [
